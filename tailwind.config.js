@@ -1,8 +1,22 @@
 module.exports = {
     future: {},
-    purge: [],
+    purge: [
+         enabled: true,
+    content: [
+        './**/*.html'
+    ]
+    ],
     theme: {
-    extend: {},
+        fontFamily: {
+        sans: ['Nunito', 'sans-serif'],
+        display: ['Nunito', 'sans-serif'],
+        body: ['Nunito', 'sans-serif']
+        },
+    extend: {
+        colors: {
+        primary: '#EA755E',
+        secondary: '#BD675F'
+    }},
     },
     variants: {},
     plugins: [
